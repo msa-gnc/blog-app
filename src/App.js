@@ -1,10 +1,13 @@
 
 import './App.css';
 
+import NavBar from "./components/NavBar"
+import Register from './pages/Register';
+
 function App() {
   return (
     <div className="App">
-      
+      <Register/>
     </div>
   );
 }
