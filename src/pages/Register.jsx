@@ -1,4 +1,4 @@
-import { Password } from "@mui/icons-material";
+
 import LockTwoToneIcon from "@mui/icons-material/LockTwoTone";
 import { Avatar, Box, Button, Container, Grid, TextField, Typography } from "@mui/material";
 
@@ -39,7 +39,7 @@ const Register = () => {
         email:"",
         image:"",
         bio:"",
-        Password:"",
+        password:"",
           }}
           validate={{}}
           onSubmit={{}}
@@ -135,7 +135,7 @@ const Register = () => {
                      margin="normal"
                      />
                     <TextField 
-                    name="bio"
+                    name="password"
                     label="Password"
                      variant="outlined" 
                      fullWidth
@@ -153,8 +153,8 @@ const Register = () => {
                 
             )}
           </Formik>
-          <Box sx={{textAlign:"center"}}>
-            <>Already have an acoount? Sign in</>
+          <Box sx={{textAlign:"center", mt:2}}>
+            <>Already have an acoount? <span style={{color:"red"}} >Sign in</span></>
           </Box>
         </Grid>
 
